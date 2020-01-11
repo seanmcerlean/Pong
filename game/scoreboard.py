@@ -22,3 +22,6 @@ class ScoreBoard(turtle.Turtle):
     def write_score_text(self):
         self.clear()
         self.write(f'{self._player1_score} : {self._player2_score}', align='center', font='Courier')
+
+    def has_won(self, winning_score):
+        return self._player1_score == winning_score or self._player2_score == winning_score

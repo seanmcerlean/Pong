@@ -38,6 +38,7 @@ class Game(turtle.Turtle):
         self.ball = Ball(0, 0, 5)
 
         self.score = ScoreBoard(0, self.top_edge - 50)
+        self.winning_score = 9
 
         self._window.listen()
         self._window.onkeypress(self.paddle_1.move_up, 'Up')
@@ -81,6 +82,9 @@ class Game(turtle.Turtle):
         self._check_paddle_hit(self.paddle_2, self.ball)
 
         self._check_score()
+
+    def has_won(self):
+        return self.score == self.winning_score
 
     @sixty_fps
     def update(self):

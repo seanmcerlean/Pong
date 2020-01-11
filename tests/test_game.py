@@ -40,7 +40,7 @@ def test_constructor():
 
     assert new_game.score.xcor() == 0
     assert new_game.score.ycor() == 250
-
+    assert new_game.winning_score == 9
 
 def test_ball_hit_top():
     new_game = game.Game((800, 600))

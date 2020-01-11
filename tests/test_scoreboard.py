@@ -30,3 +30,27 @@ def test_add_player_2_score():
 
     test_scoreboard.add_player2_score()
     assert test_scoreboard._player2_score == 1
+
+def test_player1_wins():
+    x = random.randint(-100, 100)
+    y = random.randint(-100, 100)
+    test_scoreboard = scoreboard.ScoreBoard(x, y)
+
+    test_scoreboard.add_player1_score()
+    assert test_scoreboard.has_won(1)
+
+def test_player2_wins():
+    x = random.randint(-100, 100)
+    y = random.randint(-100, 100)
+    test_scoreboard = scoreboard.ScoreBoard(x, y)
+
+    test_scoreboard.add_player2_score()
+    assert test_scoreboard.has_won(1)
+
+def test_noone_wins():
+    x = random.randint(-100, 100)
+    y = random.randint(-100, 100)
+    test_scoreboard = scoreboard.ScoreBoard(x, y)
+
+    assert not test_scoreboard.has_won(1)
+
