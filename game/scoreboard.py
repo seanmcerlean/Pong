@@ -1,4 +1,6 @@
 import turtle
+
+
 class ScoreBoard(turtle.Turtle):
     def __init__(self, xcor, ycor):
         super(ScoreBoard, self).__init__()

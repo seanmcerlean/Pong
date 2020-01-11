@@ -1,6 +1,7 @@
 import random
 import turtle
 
+
 class Ball(turtle.Turtle):
     def __init__(self, initial_x, initial_y, speed):
         super(Ball, self).__init__()

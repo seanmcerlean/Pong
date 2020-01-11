@@ -1,4 +1,4 @@
-import game.game as game
+import game
 
 print(dir(game))
 game = game.Game()

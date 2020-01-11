@@ -1,6 +1,7 @@
 import random
 import scoreboard
 
+
 def test_constructor():
     x = random.randint(-100, 100)
     y = random.randint(-100, 100)
@@ -12,6 +13,7 @@ def test_constructor():
     assert test_scoreboard._player1_score == 0
     assert test_scoreboard._player2_score == 0
 
+
 def test_add_player_1_score():
     x = random.randint(-100, 100)
     y = random.randint(-100, 100)
@@ -20,7 +22,8 @@ def test_add_player_1_score():
     test_scoreboard.add_player1_score()
     assert test_scoreboard._player1_score == 1
 
-def test_add_player_1_score():
+
+def test_add_player_2_score():
     x = random.randint(-100, 100)
     y = random.randint(-100, 100)
     test_scoreboard = scoreboard.ScoreBoard(x, y)
