@@ -1,11 +1,11 @@
-from .ball import Ball
-from .paddle import AutoPaddle, Paddle
-from .scoreboard import ScoreBoard
-
 import pathlib
 import playsound
 import turtle
 import time
+
+from ball import Ball
+from paddle import AutoPaddle, Paddle
+from scoreboard import ScoreBoard
 
 
 def sixty_fps(func):
