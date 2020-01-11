@@ -1,0 +1,6 @@
+Basic 1 Player version of Pong using turtle
+Press up and down to move
+
+Learning exercise V1.
+* No separation of model and presentation layer - look at MVC for V2
+* Look at converting to Pygame
